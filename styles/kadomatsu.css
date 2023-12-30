@@ -1,0 +1,504 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Zen+Antique+Soft&display=swap");
+body {
+  display: flex;
+  justify-content: center;
+  background: #272727;
+}
+
+#kadomatsu {
+  margin: 20px 0;
+  position: relative;
+  width: 300px;
+}
+#kadomatsu .kusa {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#kadomatsu .kusa .kusa-one {
+  position: absolute;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 215px;
+  overflow: hidden;
+}
+#kadomatsu .kusa .kusa-one .kusa-child {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  height: 100%;
+  background: #b43131;
+}
+#kadomatsu .kusa .kusa-one .kusa-child::before {
+  content: "------------------------------------------------------------------------";
+  display: block;
+  position: absolute;
+  top: -14px;
+  left: 7px;
+  color: #009900;
+  transform: scale(4, 1) skewY(-80deg);
+  font-family: "Roboto", sans-serif;
+  line-height: 3px;
+}
+#kadomatsu .kusa .kusa-one .kusa-child::after {
+  content: "------------------------------------------------------------------------";
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -4px;
+  color: #009900;
+  transform: scale(4, 1) skewY(80deg);
+  font-family: "Roboto", sans-serif;
+  line-height: 3px;
+}
+#kadomatsu .kusa.kusa1 .kusa-one:nth-child(1) {
+  top: 30px;
+  left: -40px;
+  transform: rotate(-5deg);
+}
+#kadomatsu .kusa.kusa1 .kusa-one:nth-child(2) {
+  top: 40px;
+  left: 2px;
+  transform: rotate(3deg);
+}
+#kadomatsu .kusa.kusa1 .kusa-one:nth-child(3) {
+  top: 73px;
+  left: 10px;
+  transform: rotate(6deg);
+}
+#kadomatsu .kusa.kusa1 .kusa-one:nth-child(4) {
+  top: 90px;
+  left: -60px;
+  transform: rotate(-6deg);
+}
+#kadomatsu .kusa.kusa1 .kusa-one:nth-child(5) {
+  top: 140px;
+  left: -65px;
+  transform: rotate(-8deg);
+}
+#kadomatsu .kusa.kusa1 .kusa-one:nth-child(6) {
+  top: 160px;
+  left: -70px;
+  transform: rotate(-20deg);
+}
+#kadomatsu .kusa.kusa1 .kusa-one:nth-child(7) {
+  top: 150px;
+  left: 20px;
+  transform: rotate(7deg);
+}
+#kadomatsu .kusa.kusa1 .kusa-one:nth-child(8) {
+  top: 180px;
+  left: 16px;
+  transform: rotate(14deg);
+}
+#kadomatsu .kusa.kusa2 .kusa-one:nth-child(1) {
+  top: 185px;
+  left: -46px;
+  transform: rotate(-14deg);
+}
+#kadomatsu .kusa.kusa2 .kusa-one:nth-child(2) {
+  top: 200px;
+  left: -35px;
+  transform: rotate(-7deg);
+}
+#kadomatsu .kusa.kusa2 .kusa-one:nth-child(3) {
+  top: 190px;
+  left: 0px;
+  transform: rotate(5deg);
+}
+#kadomatsu #take {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 81.4px;
+  height: 300px;
+}
+#kadomatsu #take .one-take {
+  position: absolute;
+  width: 37px;
+  height: 300px;
+}
+#kadomatsu #take .one-take .take-child {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 37px;
+  height: 300px;
+  border-radius: 18.5px 18.5px 0 0/31.45px 31.45px 0 0;
+  background: linear-gradient(to right, #5b7e38, 10%, #80b24f, 80%, #5b7e38);
+}
+#kadomatsu #take .one-take .take-child::before {
+  content: "";
+  display: block;
+  width: 31px;
+  height: 59.2px;
+  margin-top: 3px;
+  border-radius: 50%;
+  border: rgb(233, 228, 170) 2px solid;
+  background: radial-gradient(at 50% 95%, #e2b869 30%, #f7d8a9 60%);
+}
+#kadomatsu #take .one-take .take-child .take-hushi {
+  position: absolute;
+  width: 39px;
+  height: 20px;
+  overflow: hidden;
+}
+#kadomatsu #take .one-take .take-child .take-hushi::before {
+  content: "";
+  position: relative;
+  top: -140px;
+  left: -60.5px;
+  display: block;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: #91c74b 5px solid;
+}
+#kadomatsu #take .one-take .take-child .take-hushi:nth-child(1) {
+  top: 70px;
+}
+#kadomatsu #take .one-take .take-child .take-hushi:nth-child(2) {
+  top: 160px;
+}
+#kadomatsu #take .one-take:nth-child(1) {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#kadomatsu #take .one-take:nth-child(2) {
+  top: 60px;
+  left: 0;
+}
+#kadomatsu #take .one-take:nth-child(3) {
+  top: 80px;
+  right: 0;
+}
+#kadomatsu #maru {
+  position: absolute;
+  top: 110px;
+  left: calc(50% + 42px);
+  width: 35px;
+  height: 137px;
+  transform: translateX(-50%) rotate(15deg);
+  background-image: radial-gradient(#d42c32 30%, rgba(255, 255, 255, 0) 30%), radial-gradient(#d42c32 30%, rgba(255, 255, 255, 0) 30%);
+  background-size: 34px 34px;
+  background-position: 8px 9px, 27px 26px;
+}
+#kadomatsu #maru::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 200px;
+  background: rgb(163, 87, 0);
+}
+#kadomatsu #ume-eda {
+  position: absolute;
+  width: 4px;
+  height: 120px;
+  top: 120px;
+  left: calc(50% - 35px);
+  transform: translateX(-50%) rotate(-15deg);
+  background: #813c1c;
+}
+#kadomatsu #ume-eda div {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  transform: translateX(-50%) scale(0.45);
+}
+#kadomatsu #ume-eda div::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: radial-gradient(#fffefe 25%, rgba(255, 255, 255, 0) 0), radial-gradient(#fffefe 25%, rgba(255, 255, 255, 0) 0), radial-gradient(#fffefe 25%, rgba(255, 255, 255, 0) 0), radial-gradient(#fffefe 25%, rgba(255, 255, 255, 0) 0), radial-gradient(#fffefe 25%, rgba(255, 255, 255, 0) 0), radial-gradient(#fffefe 25%, rgba(255, 255, 255, 0) 0);
+  background-position: 50% 3%, 5% 40%, 95% 40%, 23% 95%, 78% 95%, 50% 50%;
+  background-size: 68px 68px;
+  background-repeat: no-repeat;
+}
+#kadomatsu #ume-eda div::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+  background-image: radial-gradient(#fdae1a 25%, rgba(255, 255, 255, 0) 0), radial-gradient(#fdae1a 25%, rgba(255, 255, 255, 0) 0), radial-gradient(#fdae1a 25%, rgba(255, 255, 255, 0) 0), radial-gradient(#fdae1a 25%, rgba(255, 255, 255, 0) 0), radial-gradient(#fdae1a 25%, rgba(255, 255, 255, 0) 0);
+  background-position: 50% 3%, 5% 40%, 95% 40%, 23% 95%, 78% 95%, 50% 50%;
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+}
+#kadomatsu #ume-eda div:nth-child(1) {
+  top: -30px;
+  left: -3px;
+}
+#kadomatsu #ume-eda div:nth-child(2) {
+  top: -5px;
+  left: 2px;
+}
+#kadomatsu #ume-eda div:nth-child(3) {
+  top: 22px;
+  left: -2px;
+}
+#kadomatsu #dodai {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 130px;
+  height: 115px;
+  border-radius: 0 0 50% 50%/0 0 15px 15px;
+  overflow: hidden;
+  background: #d3ad7c;
+}
+#kadomatsu #dodai div {
+  width: 3px;
+  height: 100%;
+}
+#kadomatsu #dodai div:nth-child(even) {
+  background: #ca8a49;
+}
+#kadomatsu #dodai::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 130px;
+  height: 100%;
+  background-image: radial-gradient(#808080 45%, rgba(255, 255, 255, 0) 0);
+  background-size: 2px 2px;
+}
+#kadomatsu #dodai::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -420px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 505px;
+  height: 505px;
+  border-radius: 50%;
+  border: #331900 20px double;
+}
+#kadomatsu #ougi {
+  position: absolute;
+  top: 205px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-90deg);
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background: conic-gradient(rgba(255, 255, 255, 0) 20deg, #c9ae37 20deg 35.5555555556deg, #aa8003 35.5555555556deg 51.1111111111deg, #c9ae37 51.1111111111deg 66.6666666667deg, #aa8003 66.6666666667deg 82.2222222222deg, #c9ae37 82.2222222222deg 97.7777777778deg, #aa8003 97.7777777778deg 113.3333333333deg, #c9ae37 113.3333333333deg 128.8888888889deg, #aa8003 128.8888888889deg 144.4444444444deg, #c9ae37 144.4444444444deg 160deg, rgba(255, 255, 255, 0) 160deg);
+}
+#kadomatsu #sasa {
+  position: absolute;
+  top: 270px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#kadomatsu #sasa .one-sasa {
+  position: absolute;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 65px;
+  border-radius: 50% 50% 50% 50%/20% 20% 80% 80%;
+  border: #009900 1.5px solid;
+  background: #076d07;
+}
+#kadomatsu #sasa .one-sasa::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1.5px;
+  height: 100%;
+  background: #48bb48;
+}
+#kadomatsu #sasa .one-sasa:nth-child(7) {
+  top: 9px;
+  filter: brightness(120%);
+}
+#kadomatsu #sasa .one-sasa:nth-child(6) {
+  top: 6px;
+  left: -20px;
+  transform: translateX(-50%) rotate(26deg) scale(0.9);
+  filter: brightness(110%);
+}
+#kadomatsu #sasa .one-sasa:nth-child(5) {
+  top: 6px;
+  left: 20px;
+  transform: translateX(-50%) rotate(-26deg) scale(0.9);
+  filter: brightness(110%);
+}
+#kadomatsu #sasa .one-sasa:nth-child(4) {
+  top: -3px;
+  left: -40px;
+  transform: translateX(-50%) rotate(60deg);
+  filter: brightness(100%);
+}
+#kadomatsu #sasa .one-sasa:nth-child(3) {
+  top: -3px;
+  left: 40px;
+  transform: translateX(-50%) rotate(-60deg);
+  filter: brightness(100%);
+}
+#kadomatsu #sasa .one-sasa:nth-child(2) {
+  top: -10px;
+  left: -60px;
+  transform: translateX(-50%) rotate(80deg) scale(0.9);
+  filter: brightness(95%);
+}
+#kadomatsu #sasa .one-sasa:nth-child(1) {
+  top: -10px;
+  left: 60px;
+  transform: translateX(-50%) rotate(-80deg) scale(0.9);
+  filter: brightness(95%);
+}
+#kadomatsu #ume {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#kadomatsu #ume div {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+}
+#kadomatsu #ume div:nth-child(1)::before, #kadomatsu #ume div:nth-child(2)::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: radial-gradient(#ffa6a7 25%, rgba(255, 255, 255, 0) 0), radial-gradient(#ffa6a7 25%, rgba(255, 255, 255, 0) 0), radial-gradient(#ffa6a7 25%, rgba(255, 255, 255, 0) 0), radial-gradient(#ffa6a7 25%, rgba(255, 255, 255, 0) 0), radial-gradient(#ffa6a7 25%, rgba(255, 255, 255, 0) 0), radial-gradient(#ffa6a7 25%, rgba(255, 255, 255, 0) 0);
+  background-position: 50% 3%, 5% 40%, 95% 40%, 23% 95%, 78% 95%, 50% 50%;
+  background-size: 68px 68px;
+  background-repeat: no-repeat;
+}
+#kadomatsu #ume div:nth-child(1)::after, #kadomatsu #ume div:nth-child(2)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+  background-image: radial-gradient(#fff8f8 25%, rgba(255, 255, 255, 0) 0), radial-gradient(#fff8f8 25%, rgba(255, 255, 255, 0) 0), radial-gradient(#fff8f8 25%, rgba(255, 255, 255, 0) 0), radial-gradient(#fff8f8 25%, rgba(255, 255, 255, 0) 0), radial-gradient(#fff8f8 25%, rgba(255, 255, 255, 0) 0);
+  background-position: 50% 3%, 5% 40%, 95% 40%, 23% 95%, 78% 95%, 50% 50%;
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+}
+#kadomatsu #ume div:nth-child(3)::before, #kadomatsu #ume div:nth-child(4)::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: radial-gradient(#fff8f8 25%, rgba(255, 255, 255, 0) 0), radial-gradient(#fff8f8 25%, rgba(255, 255, 255, 0) 0), radial-gradient(#fff8f8 25%, rgba(255, 255, 255, 0) 0), radial-gradient(#fff8f8 25%, rgba(255, 255, 255, 0) 0), radial-gradient(#fff8f8 25%, rgba(255, 255, 255, 0) 0), radial-gradient(#fff8f8 25%, rgba(255, 255, 255, 0) 0);
+  background-position: 50% 3%, 5% 40%, 95% 40%, 23% 95%, 78% 95%, 50% 50%;
+  background-size: 68px 68px;
+  background-repeat: no-repeat;
+}
+#kadomatsu #ume div:nth-child(3)::after, #kadomatsu #ume div:nth-child(4)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+  background-image: radial-gradient(#ce2327 25%, rgba(255, 255, 255, 0) 0), radial-gradient(#ce2327 25%, rgba(255, 255, 255, 0) 0), radial-gradient(#ce2327 25%, rgba(255, 255, 255, 0) 0), radial-gradient(#ce2327 25%, rgba(255, 255, 255, 0) 0), radial-gradient(#ce2327 25%, rgba(255, 255, 255, 0) 0);
+  background-position: 50% 3%, 5% 40%, 95% 40%, 23% 95%, 78% 95%, 50% 50%;
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+}
+#kadomatsu #ume div:nth-child(5)::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: radial-gradient(#ce2327 25%, rgba(255, 255, 255, 0) 0), radial-gradient(#ce2327 25%, rgba(255, 255, 255, 0) 0), radial-gradient(#ce2327 25%, rgba(255, 255, 255, 0) 0), radial-gradient(#ce2327 25%, rgba(255, 255, 255, 0) 0), radial-gradient(#ce2327 25%, rgba(255, 255, 255, 0) 0), radial-gradient(#ce2327 25%, rgba(255, 255, 255, 0) 0);
+  background-position: 50% 3%, 5% 40%, 95% 40%, 23% 95%, 78% 95%, 50% 50%;
+  background-size: 68px 68px;
+  background-repeat: no-repeat;
+}
+#kadomatsu #ume div:nth-child(5)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+  background-image: radial-gradient(#fff78b 25%, rgba(255, 255, 255, 0) 0), radial-gradient(#fff78b 25%, rgba(255, 255, 255, 0) 0), radial-gradient(#fff78b 25%, rgba(255, 255, 255, 0) 0), radial-gradient(#fff78b 25%, rgba(255, 255, 255, 0) 0), radial-gradient(#fff78b 25%, rgba(255, 255, 255, 0) 0);
+  background-position: 50% 3%, 5% 40%, 95% 40%, 23% 95%, 78% 95%, 50% 50%;
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+}
+#kadomatsu #ume div:nth-child(5) {
+  top: 22px;
+  transform: translateX(-50%) scale(1);
+}
+#kadomatsu #ume div:nth-child(4) {
+  top: 17px;
+  left: -36px;
+  transform: translateX(-50%) scale(0.8);
+}
+#kadomatsu #ume div:nth-child(3) {
+  top: 17px;
+  left: 36px;
+  transform: translateX(-50%) scale(0.8);
+}
+#kadomatsu #ume div:nth-child(2) {
+  top: 12px;
+  left: -60px;
+  transform: translateX(-50%) scale(0.6);
+}
+#kadomatsu #ume div:nth-child(1) {
+  top: 12px;
+  left: 60px;
+  transform: translateX(-50%) scale(0.6);
+}
+#kadomatsu #geisyun {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 310px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 45px;
+  height: 95px;
+  padding: 3px;
+  border: #c59b1c 6px solid;
+  outline: rgb(209, 33, 33) 1px solid;
+  outline-offset: -4px;
+  background: #f5ede2;
+  font-size: 17px;
+  font-family: "Zen Antique Soft", serif;
+  writing-mode: vertical-rl;
+}

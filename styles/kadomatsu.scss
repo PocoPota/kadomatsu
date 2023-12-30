@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Zen+Antique+Soft&display=swap');
+
+
+body {
+    display: flex; // 表示用
+    justify-content: center; // 表示用
+    background: #272727;
+}
+
+#kadomatsu {
+    margin: 20px 0; // 表示用
+    position: relative;
+    width: 300px;
+
+    .kusa {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        .kusa-one {
+            position: absolute;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 215px;
+            overflow: hidden;
+
+            .kusa-child {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 3px;
+                height: 100%;
+                background: #b43131;
+
+                &::before {
+                    content: '------------------------------------------------------------------------';
+                    display: block;
+                    position: absolute;
+                    top: -14px;
+                    left: 7px;
+                    color: #009900;
+                    transform: scale(4, 1) skewY(-80deg);
+                    font-family: 'Roboto', sans-serif;
+                    line-height: 3px;
+                }
+
+                &::after {
+                    content: '------------------------------------------------------------------------';
+                    display: block;
+                    position: absolute;
+                    top: -5px;
+                    left: -4px;
+                    color: #009900;
+                    transform: scale(4, 1) skewY(80deg);
+                    font-family: 'Roboto', sans-serif;
+                    line-height: 3px;
+
+                }
+            }
+        }
+
+        &.kusa1 {
+            .kusa-one {
+                &:nth-child(1) {
+                    top: 30px;
+                    left: -40px;
+                    transform: rotate(-5deg);
+                }
+
+                &:nth-child(2) {
+                    top: 40px;
+                    left: 2px;
+                    transform: rotate(3deg);
+                }
+
+                &:nth-child(3) {
+                    top: 73px;
+                    left: 10px;
+                    transform: rotate(6deg);
+                }
+
+                &:nth-child(4) {
+                    top: 90px;
+                    left: -60px;
+                    transform: rotate(-6deg);
+                }
+
+                &:nth-child(5) {
+                    top: 140px;
+                    left: -65px;
+                    transform: rotate(-8deg);
+                }
+
+                &:nth-child(6) {
+                    top: 160px;
+                    left: -70px;
+                    transform: rotate(-20deg);
+                }
+
+                &:nth-child(7) {
+                    top: 150px;
+                    left: 20px;
+                    transform: rotate(7deg);
+                }
+
+                &:nth-child(8) {
+                    top: 180px;
+                    left: 16px;
+                    transform: rotate(14deg);
+                }
+            }
+        }
+
+        &.kusa2 {
+            .kusa-one {
+                &:nth-child(1) {
+                    top: 185px;
+                    left: -46px;
+                    transform: rotate(-14deg);
+                }
+
+                &:nth-child(2) {
+                    top: 200px;
+                    left: -35px;
+                    transform: rotate(-7deg);
+                }
+
+                &:nth-child(3) {
+                    top: 190px;
+                    left: 0px;
+                    transform: rotate(5deg);
+                }
+            }
+        }
+    }
+
+    #take {
+        $take-width: 37px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc($take-width * 3 - $take-width * 4/5);
+        height: 300px;
+
+        .one-take {
+            position: absolute;
+            width: $take-width;
+            height: 300px;
+
+            .take-child {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                width: $take-width;
+                height: 300px;
+                border-radius: calc($take-width / 2) calc($take-width / 2) 0 0 / calc($take-width * 0.85) calc($take-width * 0.85) 0 0;
+                background: linear-gradient(to right, #5b7e38, 10%, #80b24f, 80%, #5b7e38);
+
+                &::before {
+                    $take-amata-border: 2px;
+                    $take-atama-sukima: 1px;
+                    content: '';
+                    display: block;
+                    width: calc($take-width - ($take-amata-border * 2) - ($take-atama-sukima * 2));
+                    height: calc($take-width * 1.6);
+                    margin-top: calc($take-amata-border + $take-atama-sukima);
+                    border-radius: 50%;
+                    border: rgb(233, 228, 170) $take-amata-border solid;
+                    background: radial-gradient(at 50% 95%, #e2b869 30%, #f7d8a9 60%);
+                }
+
+                .take-hushi {
+                    position: absolute;
+                    width: calc($take-width + 2px);
+                    height: 20px;
+                    overflow: hidden;
+
+                    &::before {
+                        $circle-size: 160px;
+                        content: '';
+                        position: relative;
+                        top: calc(-1 * $circle-size + 20px);
+                        left: calc(-1 * ($circle-size / 2) + ($take-width + 2px) / 2);
+                        display: block;
+                        width: $circle-size;
+                        height: $circle-size;
+                        border-radius: 50%;
+                        border: #91c74b 5px solid;
+                    }
+
+                    &:nth-child(1) {
+                        top: 70px;
+                    }
+
+                    &:nth-child(2) {
+                        top: 160px;
+                    }
+                }
+
+            }
+
+            &:nth-child(1) {
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            &:nth-child(2) {
+                top: 60px;
+                left: 0;
+            }
+
+            &:nth-child(3) {
+                top: 80px;
+                right: 0;
+            }
+        }
+    }
+
+    #maru {
+        position: absolute;
+        top: 110px;
+        left: calc(50% + 42px);
+        width: 35px;
+        height: 137px;
+        transform: translateX(-50%) rotate(15deg);
+        background-image:
+            radial-gradient(#d42c32 30%, #ffffff00 30%),
+            radial-gradient(#d42c32 30%, #ffffff00 30%);
+        background-size: 34px 34px;
+        background-position: 8px 9px, 27px 26px;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 200px;
+            background: rgb(163, 87, 0);
+        }
+    }
+
+    // 梅の花プリセット
+    @mixin ume {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 100px;
+
+    }
+
+    @mixin hanabira($hana-color) {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-image:
+            radial-gradient($hana-color 25%, #ffffff00 0),
+            radial-gradient($hana-color 25%, #ffffff00 0),
+            radial-gradient($hana-color 25%, #ffffff00 0),
+            radial-gradient($hana-color 25%, #ffffff00 0),
+            radial-gradient($hana-color 25%, #ffffff00 0),
+            radial-gradient($hana-color 25%, #ffffff00 0);
+        background-position: 50% 3%, 5% 40%, 95% 40%, 23% 95%, 78% 95%, 50% 50%;
+        background-size: 68px 68px;
+        background-repeat: no-repeat;
+    }
+
+    @mixin ume-in($in-color) {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 25px;
+        height: 25px;
+        background-image:
+            radial-gradient($in-color 25%, #ffffff00 0),
+            radial-gradient($in-color 25%, #ffffff00 0),
+            radial-gradient($in-color 25%, #ffffff00 0),
+            radial-gradient($in-color 25%, #ffffff00 0),
+            radial-gradient($in-color 25%, #ffffff00 0);
+        background-position: 50% 3%, 5% 40%, 95% 40%, 23% 95%, 78% 95%, 50% 50%;
+        background-size: 10px 10px;
+        background-repeat: no-repeat;
+    }
+
+    #ume-eda {
+        position: absolute;
+        width: 4px;
+        height: 120px;
+        top: 120px;
+        left: calc(50% - 35px);
+        transform: translateX(-50%) rotate(-15deg);
+        background: #813c1c;
+        div {
+            @include ume();
+            transform: translateX(-50%) scale(0.45);
+
+            &::before {
+                @include hanabira(#fffefe);
+            }
+
+            &::after {
+                @include ume-in(#fdae1a);
+            }
+
+            &:nth-child(1){
+                top: -30px;
+                left: -3px;
+            }
+            &:nth-child(2){
+                top: -5px;
+                left: 2px;
+            }
+            &:nth-child(3){
+                top: 22px;
+                left: -2px;
+            }
+        }
+    }
+
+    #dodai {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 300px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 130px;
+        height: 115px;
+        border-radius: 0 0 50% 50% / 0 0 15px 15px;
+        overflow: hidden;
+        background: #d3ad7c;
+
+        div {
+            width: 3px;
+            height: 100%;
+
+            &:nth-child(even) {
+                background: #ca8a49;
+            }
+        }
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 130px;
+            height: 100%;
+            background-image: radial-gradient(#808080 45%, #ffffff00 0);
+            background-size: 2px 2px;
+        }
+
+        &::after{
+            content: '';
+            display: block;
+            position: absolute;
+            top: -420px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 505px;
+            height: 505px;
+            border-radius: 50%;
+            border: #331900 20px double;
+        }
+    }
+
+    #ougi {
+        $ougi-space-deg: 20deg; // $ougi-space-deg <= 90deg
+        $ougi-div-num: 9;
+        $ougi-c1: #c9ae37;
+        $ougi-c2: #aa8003;
+        $ougi-div-deg: calc((180deg - $ougi-space-deg * 2) / $ougi-div-num);
+        position: absolute;
+        top: 205px;
+        left: 50%;
+        transform: translateX(-50%) rotate(-90deg);
+        $deg: 90deg;
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        background: conic-gradient(#ffffff00 $ougi-space-deg,
+                $ougi-c1 $ougi-space-deg calc($ougi-space-deg + $ougi-div-deg * 1),
+                $ougi-c2 calc($ougi-space-deg + $ougi-div-deg * 1) calc($ougi-space-deg + $ougi-div-deg * 2),
+                $ougi-c1 calc($ougi-space-deg + $ougi-div-deg * 2) calc($ougi-space-deg + $ougi-div-deg * 3),
+                $ougi-c2 calc($ougi-space-deg + $ougi-div-deg * 3) calc($ougi-space-deg + $ougi-div-deg * 4),
+                $ougi-c1 calc($ougi-space-deg + $ougi-div-deg * 4) calc($ougi-space-deg + $ougi-div-deg * 5),
+                $ougi-c2 calc($ougi-space-deg + $ougi-div-deg * 5) calc($ougi-space-deg + $ougi-div-deg * 6),
+                $ougi-c1 calc($ougi-space-deg + $ougi-div-deg * 6) calc($ougi-space-deg + $ougi-div-deg * 7),
+                $ougi-c2 calc($ougi-space-deg + $ougi-div-deg * 7) calc($ougi-space-deg + $ougi-div-deg * 8),
+                $ougi-c1 calc($ougi-space-deg + $ougi-div-deg * 8) calc($ougi-space-deg + $ougi-div-deg * 9),
+                #ffffff00 calc($ougi-space-deg + $ougi-div-deg * 9));
+    }
+
+    #sasa {
+        position: absolute;
+        top: 270px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        .one-sasa {
+            position: absolute;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 65px;
+            border-radius: 50% 50% 50% 50% / 20% 20% 80% 80%;
+            border: #009900 1.5px solid;
+            background: #076d07;
+
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 1.5px;
+                height: 100%;
+                background: #48bb48;
+            }
+
+            &:nth-child(7) {
+                top: 9px;
+                filter: brightness(120%);
+            }
+
+            &:nth-child(6) {
+                top: 6px;
+                left: -20px;
+                transform: translateX(-50%) rotate(26deg) scale(0.9);
+                filter: brightness(110%);
+            }
+
+            &:nth-child(5) {
+                top: 6px;
+                left: 20px;
+                transform: translateX(-50%) rotate(-26deg) scale(0.9);
+                filter: brightness(110%);
+            }
+
+            &:nth-child(4) {
+                top: -3px;
+                left: -40px;
+                transform: translateX(-50%) rotate(60deg);
+                filter: brightness(100%);
+            }
+
+            &:nth-child(3) {
+                top: -3px;
+                left: 40px;
+                transform: translateX(-50%) rotate(-60deg);
+                filter: brightness(100%);
+            }
+
+            &:nth-child(2) {
+                top: -10px;
+                left: -60px;
+                transform: translateX(-50%) rotate(80deg) scale(0.9);
+                filter: brightness(95%);
+            }
+
+            &:nth-child(1) {
+                top: -10px;
+                left: 60px;
+                transform: translateX(-50%) rotate(-80deg) scale(0.9);
+                filter: brightness(95%);
+            }
+        }
+    }
+
+    #ume {
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        div {
+            @include ume();
+
+            &:nth-child(1),
+            &:nth-child(2) {
+                &::before {
+                    @include hanabira(#ffa6a7);
+                }
+
+                &::after {
+                    @include ume-in(#fff8f8);
+                }
+            }
+
+            &:nth-child(3),
+            &:nth-child(4) {
+                &::before {
+                    @include hanabira(#fff8f8);
+                }
+
+                &::after {
+                    @include ume-in(#ce2327);
+                }
+            }
+
+            &:nth-child(5) {
+                &::before {
+                    @include hanabira(#ce2327);
+                }
+
+                &::after {
+                    @include ume-in(#fff78b);
+                }
+            }
+
+            &:nth-child(5) {
+                top: 22px;
+                transform: translateX(-50%) scale(1);
+            }
+
+            &:nth-child(4) {
+                top: 17px;
+                left: -36px;
+                transform: translateX(-50%) scale(0.8);
+            }
+
+            &:nth-child(3) {
+                top: 17px;
+                left: 36px;
+                transform: translateX(-50%) scale(0.8);
+            }
+
+            &:nth-child(2) {
+                top: 12px;
+                left: -60px;
+                transform: translateX(-50%) scale(0.6);
+            }
+
+            &:nth-child(1) {
+                top: 12px;
+                left: 60px;
+                transform: translateX(-50%) scale(0.6);
+            }
+        }
+    }
+
+    #geisyun{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 310px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 45px;
+        height: 95px;
+        padding: 3px;
+        border: #c59b1c 6px solid;
+        outline: rgb(209, 33, 33) 1px solid;
+        outline-offset: -4px;
+        background: #f5ede2;
+        font-size: 17px;
+        font-family: 'Zen Antique Soft', serif;
+        writing-mode: vertical-rl;
+        
+    }
+}
