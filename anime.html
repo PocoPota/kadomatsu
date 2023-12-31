@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>門松 - アニメーション</title>
+    <link rel="stylesheet" href="reset/reset.css">
+    <link rel="stylesheet" href="styles/kadomatsu.css">
+    <link rel="stylesheet" href="styles/animation.css">
+</head>
+
+<body>
+    <section id="kadomatsu">
+        <div class="kusa kusa1">
+            <div class="kusa-one">
+                <div class="kusa-child"></div>
+            </div>
+            <div class="kusa-one">
+                <div class="kusa-child"></div>
+            </div>
+            <div class="kusa-one">
+                <div class="kusa-child"></div>
+            </div>
+            <div class="kusa-one">
+                <div class="kusa-child"></div>
+            </div>
+            <div class="kusa-one">
+                <div class="kusa-child"></div>
+            </div>
+            <div class="kusa-one">
+                <div class="kusa-child"></div>
+            </div>
+            <div class="kusa-one">
+                <div class="kusa-child"></div>
+            </div>
+            <div class="kusa-one">
+                <div class="kusa-child"></div>
+            </div>
+        </div>
+        <div id="take">
+            <div class="one-take">
+                <div class="take-child">
+                    <div class="take-hushi"></div>
+                    <div class="take-hushi"></div>
+                </div>
+            </div>
+            <div class="one-take">
+                <div class="take-child">
+                    <div class="take-hushi"></div>
+                    <div class="take-hushi"></div>
+                </div>
+            </div>
+            <div class="one-take">
+                <div class="take-child">
+                    <div class="take-hushi"></div>
+                    <div class="take-hushi"></div>
+                </div>
+            </div>
+        </div>
+        <div class="kusa kusa2">
+            <div class="kusa-one">
+                <div class="kusa-child"></div>
+            </div>
+            <div class="kusa-one">
+                <div class="kusa-child"></div>
+            </div>
+            <div class="kusa-one">
+                <div class="kusa-child"></div>
+            </div>
+        </div>
+        <div id="maru"></div>
+        <div id="ume-eda">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="dodai"></div>
+        <div id="ougi"></div>
+        <div id="sasa">
+            <div class="one-sasa"></div>
+            <div class="one-sasa"></div>
+            <div class="one-sasa"></div>
+            <div class="one-sasa"></div>
+            <div class="one-sasa"></div>
+            <div class="one-sasa"></div>
+            <div class="one-sasa"></div>
+        </div>
+        <div id="ume">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="geisyun">謹賀新年</div>
+    </section>
+    <script>
+        const dodai = document.querySelector('#dodai');
+        const dodai_width = 150;
+        const line_width = 3;
+        const num = Math.ceil(dodai_width / line_width);
+        for(let i = 0; i <= num; i++){
+            dodai.insertAdjacentElement('beforeend', document.createElement('div'));
+        }
+    </script>
+</body>
+
+</html>
