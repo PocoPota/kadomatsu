@@ -1,3 +1,7 @@
+#kadomatsu{
+    margin-top: 36px;
+}
+
 .one-take{
     &:nth-child(1){
       animation: floating-y1 1.5s ease-in-out infinite alternate-reverse;
